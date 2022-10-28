@@ -1,0 +1,150 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/MainMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Steel Frames 2.4.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Block1.5.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprites/Block1.6.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Steel Frames 2.2.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=7]
+[ext_resource path="res://Sprites/Steel Frames 2.3.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/PlayerMenu.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Flying Enemy.tscn" type="PackedScene" id=11]
+
+[node name="Main" type="Node2D"]
+position = Vector2( -955, -1345 )
+script = ExtResource( 7 )
+
+[node name="MainMenu" parent="." instance=ExtResource( 1 )]
+margin_left = 919.0
+margin_top = 1371.0
+margin_right = 919.0
+margin_bottom = 1371.0
+
+[node name="Block15" type="Sprite" parent="."]
+position = Vector2( 1209, 1902 )
+texture = ExtResource( 3 )
+
+[node name="Block16" type="Sprite" parent="."]
+position = Vector2( 1311, 1902 )
+texture = ExtResource( 5 )
+
+[node name="Block19" type="Sprite" parent="."]
+position = Vector2( 1621, 1902.5 )
+texture = ExtResource( 3 )
+
+[node name="Block20" type="Sprite" parent="."]
+position = Vector2( 1724, 1903 )
+texture = ExtResource( 5 )
+
+[node name="Block21" type="Sprite" parent="."]
+position = Vector2( 1828, 1903 )
+texture = ExtResource( 3 )
+
+[node name="Block22" type="Sprite" parent="."]
+position = Vector2( 2034, 1902 )
+texture = ExtResource( 3 )
+
+[node name="Block24" type="Sprite" parent="."]
+position = Vector2( 1107, 1901 )
+texture = ExtResource( 5 )
+
+[node name="Block25" type="Sprite" parent="."]
+position = Vector2( 1006, 1900 )
+texture = ExtResource( 5 )
+
+[node name="Block18" type="Sprite" parent="."]
+position = Vector2( 1517, 1902.5 )
+texture = ExtResource( 5 )
+
+[node name="Block17" type="Sprite" parent="."]
+position = Vector2( 1415, 1902.5 )
+texture = ExtResource( 3 )
+
+[node name="Spike" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1582, 1860 )
+z_index = -1
+
+[node name="SteelFrames23" type="Sprite" parent="."]
+position = Vector2( 1003, 1814 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames24" type="Sprite" parent="."]
+position = Vector2( 1001, 1900 )
+texture = ExtResource( 2 )
+
+[node name="SteelFrames22" type="Sprite" parent="."]
+position = Vector2( 1003, 1724 )
+texture = ExtResource( 6 )
+
+[node name="SteelFrames25" type="Sprite" parent="."]
+position = Vector2( 1003, 1635.5 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames26" type="Sprite" parent="."]
+position = Vector2( 1003, 1545.5 )
+texture = ExtResource( 6 )
+
+[node name="SteelFrames27" type="Sprite" parent="."]
+position = Vector2( 1003, 1453.5 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames28" type="Sprite" parent="."]
+position = Vector2( 1003, 1363.5 )
+texture = ExtResource( 6 )
+
+[node name="SteelFrames29" type="Sprite" parent="."]
+position = Vector2( 2057, 1814 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames30" type="Sprite" parent="."]
+position = Vector2( 2057, 1724 )
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="SteelFrames31" type="Sprite" parent="."]
+position = Vector2( 2057, 1635.5 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames32" type="Sprite" parent="."]
+position = Vector2( 2057, 1545.5 )
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="SteelFrames33" type="Sprite" parent="."]
+position = Vector2( 2057, 1453.5 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames34" type="Sprite" parent="."]
+position = Vector2( 2057, 1363.5 )
+texture = ExtResource( 6 )
+flip_h = true
+
+[node name="SteelFrames35" type="Sprite" parent="."]
+position = Vector2( 2056, 1901 )
+texture = ExtResource( 8 )
+
+[node name="Enemy" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1072, 1783 )
+speed = 0.0
+gravity = 0.0
+
+[node name="Block23" type="Sprite" parent="."]
+position = Vector2( 1930, 1903 )
+texture = ExtResource( 5 )
+
+[node name="Block26" type="Sprite" parent="."]
+position = Vector2( 1930, 1903 )
+texture = ExtResource( 5 )
+
+[node name="PlayerMenu" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1347, 1796 )
+
+[node name="Flying Enemy" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1261, 1557 )
+point1 = Vector2( 1261, 1557 )
+point2 = Vector2( 1261, 1557 )

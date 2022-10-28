@@ -1,0 +1,96 @@
+[gd_scene load_steps=43 format=2]
+
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0002.png" type="Texture" id=1]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0003.png" type="Texture" id=2]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0001.png" type="Texture" id=3]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0007.png" type="Texture" id=4]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0015.png" type="Texture" id=5]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0005.png" type="Texture" id=6]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0014.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/BossStage2.gd" type="Script" id=8]
+[ext_resource path="res://Sounds/mixkit-laser-cannon-shot-1678.wav" type="AudioStream" id=9]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0036.png" type="Texture" id=10]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0028.png" type="Texture" id=11]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0034.png" type="Texture" id=12]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0022.png" type="Texture" id=13]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0019.png" type="Texture" id=14]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0024.png" type="Texture" id=15]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0008.png" type="Texture" id=16]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0004.png" type="Texture" id=17]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0006.png" type="Texture" id=18]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0018.png" type="Texture" id=19]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0025.png" type="Texture" id=20]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0010.png" type="Texture" id=21]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0026.png" type="Texture" id=22]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0033.png" type="Texture" id=23]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0020.png" type="Texture" id=24]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0021.png" type="Texture" id=25]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0023.png" type="Texture" id=26]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0027.png" type="Texture" id=27]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0016.png" type="Texture" id=28]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0017.png" type="Texture" id=29]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0032.png" type="Texture" id=30]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0029.png" type="Texture" id=31]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0011.png" type="Texture" id=32]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0030.png" type="Texture" id=33]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0031.png" type="Texture" id=34]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0009.png" type="Texture" id=35]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0012.png" type="Texture" id=36]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0035.png" type="Texture" id=37]
+[ext_resource path="res://bossmanputtingonglasses/bossmanputtingonglasses0013.png" type="Texture" id=38]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 69.5, 189.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 673, 485.625 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 206.5, 120.5 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 17 ), ExtResource( 6 ), ExtResource( 18 ), ExtResource( 4 ), ExtResource( 16 ), ExtResource( 35 ), ExtResource( 21 ), ExtResource( 32 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 19 ), ExtResource( 14 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 13 ), ExtResource( 26 ), ExtResource( 15 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 11 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 30 ), ExtResource( 23 ), ExtResource( 12 ), ExtResource( 37 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "default",
+"speed": 20.0
+} ]
+
+[node name="BossStage2" type="KinematicBody2D"]
+position = Vector2( -59, -19 )
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 37, 155 )
+shape = SubResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -517, -140 )
+shape = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+
+[node name="KillZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2( 37, 221 )
+shape = SubResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3.8147e-06, 93 )
+scale = Vector2( 0.717487, 0.717487 )
+frames = SubResource( 6 )
+
+[node name="Timer2" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="KillZone" to="." method="_on_KillZone_body_entered"]
+[connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]

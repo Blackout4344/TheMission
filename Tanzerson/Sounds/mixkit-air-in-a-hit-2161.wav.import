@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-air-in-a-hit-2161.wav-7eeb1becf96680a6041ea221f85eadcc.sample"
+
+[deps]
+
+source_file="res://Sounds/mixkit-air-in-a-hit-2161.wav"
+dest_files=[ "res://.import/mixkit-air-in-a-hit-2161.wav-7eeb1becf96680a6041ea221f85eadcc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

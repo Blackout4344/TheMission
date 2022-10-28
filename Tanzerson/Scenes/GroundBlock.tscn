@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/New Piskel copy 5.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3.82812, 2.84766 )
+
+[node name="GroundBlock" type="StaticBody2D"]
+position = Vector2( 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 27.7865, 4.08865 )
+scale = Vector2( 0.8, 1 )
+shape = SubResource( 1 )
+
+[node name="NewPiskelCopy5" type="Sprite" parent="."]
+position = Vector2( 28.3819, 4.44863 )
+scale = Vector2( 0.0577939, 0.0589718 )
+texture = ExtResource( 1 )

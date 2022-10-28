@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mixkit-golem-stomp-c-3046.mp3-ad376a7565593e595bc6d6dddc68ffcd.mp3str"
+
+[deps]
+
+source_file="res://Sounds/mixkit-golem-stomp-c-3046.mp3"
+dest_files=[ "res://.import/mixkit-golem-stomp-c-3046.mp3-ad376a7565593e595bc6d6dddc68ffcd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

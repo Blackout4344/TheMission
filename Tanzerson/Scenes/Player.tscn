@@ -1,0 +1,167 @@
+[gd_scene load_steps=69 format=2]
+
+[ext_resource path="res://Sprites/Walk5.svg" type="Texture" id=1]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/mixkit-funny-game-over-2878.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sprites/Walk2.svg" type="Texture" id=4]
+[ext_resource path="res://Sprites/Walk3.svg" type="Texture" id=5]
+[ext_resource path="res://Sprites/Walk1.svg" type="Texture" id=6]
+[ext_resource path="res://Sprites/Walk4.svg" type="Texture" id=7]
+[ext_resource path="res://Sprites/Walk6.svg" type="Texture" id=8]
+[ext_resource path="res://Sprites/Walk7.svg" type="Texture" id=9]
+[ext_resource path="res://Sprites/Walk8.svg" type="Texture" id=10]
+[ext_resource path="res://Sprites/Walk11.svg" type="Texture" id=11]
+[ext_resource path="res://Sprites/Walk12.svg" type="Texture" id=12]
+[ext_resource path="res://Sprites/Climb.svg" type="Texture" id=13]
+[ext_resource path="res://Sprites/Climb2.svg" type="Texture" id=14]
+[ext_resource path="res://running frames for mk/Capture8-removebg-preview.png" type="Texture" id=15]
+[ext_resource path="res://running frames for mk/Capture9-removebg-preview.png" type="Texture" id=16]
+[ext_resource path="res://running frames for mk/Capture10-removebg-preview.png" type="Texture" id=17]
+[ext_resource path="res://running frames for mk/Capture11-removebg-preview.png" type="Texture" id=18]
+[ext_resource path="res://running frames for mk/Capture12-removebg-preview.png" type="Texture" id=19]
+[ext_resource path="res://running frames for mk/Capture14-removebg-preview.png" type="Texture" id=20]
+[ext_resource path="res://running frames for mk/Capture13-removebg-preview.png" type="Texture" id=21]
+[ext_resource path="res://running frames for mk/Capture7-removebg-preview.png" type="Texture" id=22]
+[ext_resource path="res://running frames for mk/Capture5-removebg-preview.png" type="Texture" id=23]
+[ext_resource path="res://running frames for mk/Capture1-removebg-preview.png" type="Texture" id=24]
+[ext_resource path="res://running frames for mk/Capture3-removebg-preview.png" type="Texture" id=25]
+[ext_resource path="res://running frames for mk/Capture2-removebg-preview.png" type="Texture" id=26]
+[ext_resource path="res://running frames for mk/Capture4-removebg-preview.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur10-removebg-preview.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur8-removebg-preview.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur6-removebg-preview.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur9-removebg-preview.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur11-removebg-preview.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur5-removebg-preview.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur2-removebg-preview.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur1-removebg-preview.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur3-removebg-preview.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur4-removebg-preview.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/climbing frames for mk/Captur7-removebg-preview.png" type="Texture" id=38]
+[ext_resource path="res://Idle frames for mo khan/idle1-removebg-preview.png" type="Texture" id=39]
+[ext_resource path="res://Idle frames for mo khan/idle2-removebg-preview.png" type="Texture" id=40]
+[ext_resource path="res://Idle frames for mo khan/idle3-removebg-preview.png" type="Texture" id=41]
+[ext_resource path="res://Idle frames for mo khan/idle6-removebg-preview.png" type="Texture" id=42]
+[ext_resource path="res://Idle frames for mo khan/idle4-removebg-preview.png" type="Texture" id=43]
+[ext_resource path="res://Idle frames for mo khan/idle5-removebg-preview.png" type="Texture" id=44]
+[ext_resource path="res://Idle frames for mo khan/idle7-removebg-preview.png" type="Texture" id=45]
+[ext_resource path="res://Idle frames for mo khan/idle8-removebg-preview.png" type="Texture" id=46]
+[ext_resource path="res://Idle frames for mo khan/idle9-removebg-preview.png" type="Texture" id=47]
+[ext_resource path="res://Idle frames for mo khan/idle10-removebg-preview.png" type="Texture" id=48]
+[ext_resource path="res://Idle frames for mo khan/idle11-removebg-preview.png" type="Texture" id=49]
+[ext_resource path="res://Idle frames for mo khan/idle12-removebg-preview.png" type="Texture" id=50]
+[ext_resource path="res://Idle frames for mo khan/idle13-removebg-preview.png" type="Texture" id=51]
+[ext_resource path="res://Idle frames for mo khan/idle14-removebg-preview.png" type="Texture" id=52]
+[ext_resource path="res://Idle frames for mo khan/idle15-removebg-preview.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/idle3-removebg-preview.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/idle4-removebg-preview.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/idle5-removebg-preview.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/idle6-removebg-preview.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/idle7-removebg-preview.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/idle8-removebg-preview.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/idle9-removebg-preview.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/idle1-removebg-preview.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/idle2-removebg-preview.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/idle-removebg-preview.png" type="Texture" id=63]
+[ext_resource path="res://Scripts/ScreenShakey.gd" type="Script" id=64]
+[ext_resource path="res://Sounds/mixkit-air-in-a-hit-2161.wav" type="AudioStream" id=65]
+[ext_resource path="res://Sounds/long-saw-43911.mp3" type="AudioStream" id=66]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 25, 60.5 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 35 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 38 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Climbing",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 42 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 63 ), ExtResource( 51 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 52 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 50.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "climbing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "walking",
+"speed": 20.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 507, 247 )
+script = ExtResource( 2 )
+speed = 400.0
+gravity = 800.0
+jump = 500.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2, -0.5 )
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 2, 2 )
+limit_left = -2200
+limit_top = -100000
+limit_right = 5900
+limit_bottom = -529
+editor_draw_limits = true
+script = ExtResource( 64 )
+
+[node name="Tween" type="Tween" parent="Camera2D"]
+
+[node name="Timer" type="Timer" parent="Camera2D"]
+autostart = true
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="DeathParticles" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 13
+lifetime = 0.2
+one_shot = true
+explosiveness = 1.0
+direction = Vector2( 0, 2 )
+spread = 63.55
+initial_velocity = 543.04
+initial_velocity_random = 1.0
+scale_amount = 9.69
+color = Color( 0.807843, 0.352941, 0.105882, 1 )
+
+[node name="DeathTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3, 0 )
+scale = Vector2( 0.424121, 0.427106 )
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 23
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+autostart = true
+
+[node name="KnifeSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 65 )
+
+[node name="Death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 66 )
+
+[connection signal="timeout" from="Camera2D/Timer" to="Camera2D" method="_on_Timer_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/long-saw-43911.mp3-e4ec22c6ac401e20c857eb57181c15c9.mp3str"
+
+[deps]
+
+source_file="res://Sounds/long-saw-43911.mp3"
+dest_files=[ "res://.import/long-saw-43911.mp3-e4ec22c6ac401e20c857eb57181c15c9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
