@@ -1099,5 +1099,5 @@ position = Vector2( 4553, 1753 )
 position = Vector2( 5813, 1896 )
 
 [node name="AnimatedSprite" parent="." instance=ExtResource( 32 )]
-position = Vector2( 4165.6, -10584.3 )
+position = Vector2( 4162, -10589 )
 scale = Vector2( 0.325907, 0.325907 )
