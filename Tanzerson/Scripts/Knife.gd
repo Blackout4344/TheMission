@@ -12,7 +12,7 @@ func _physics_process(delta):
 	move = Vector2.ZERO
 	
 	move = move.move_toward(lookVec,delta)
-#	$DeathParticles.emitting = true
+	#$DeathParticles.emitting = true
 	$AnimatedSprite.play("default")
 	position += move * speed
 	
@@ -22,4 +22,10 @@ func _on_Knife_body_entered(body):
 	if body.has_method("hit"):
 		body.hit()
 	if body.name != "Player":
+		queue_free()
+	
+
+
+func _on_Knife_area_entered(area):
+	if area.name == "Immune":
 		queue_free()

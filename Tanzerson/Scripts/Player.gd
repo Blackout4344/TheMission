@@ -17,12 +17,15 @@ func enter() -> void:
 	coyote_timer = coyote_time
 	
 
-func _process(delta):
+func _process(_delta):
 	if Global.groundShake:
 		Global.camera.shake(1,5)	
-	coyote_timer -= delta
+	Global.playerPosition = self.position
+	if Global.doYourThing:
+		$Tran/AnimationPlayer.play("normal")
 	
-func _input(event : InputEvent):
+	
+func _input(_event : InputEvent):
 	if Input.is_action_just_pressed("Move_Up") and coyote_timer > 0:
 		return jump
 func _physics_process(delta):
@@ -32,7 +35,7 @@ func _physics_process(delta):
 		Vel.x += speed
 	if Input.is_action_pressed("Move_Left"):
 		$Sprite.flip_h = true
-		Vel.x -= speed	
+		Vel.x -= speed
 	if (Vel.x != 0):
 		$Sprite.play("Walking")		
 	else:
@@ -63,11 +66,13 @@ func shoot():
 	$Timer.set_wait_time(1)
 	 
 func _ready() -> void:	
+	$DeathTran/ColorRect.hide()
 	if not Global.playerFirstSpawn: 
 		if not Global.deathSoundPlayed:
 			$DeathSound.play()
 			Global.deathSoundPlayed = true	
-	OS.delay_msec(500)
+	$DeathTran/ColorRect.show()
+	$DeathTran/AnimationPlayer2.play("death")		
 	self.position = Global.spawn_point
 	Global.deathSoundPlayed = false
 
@@ -75,6 +80,23 @@ func _ready() -> void:
 
 func _on_Timer_timeout():
 	readyShoot = true
+
+
+
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == "normal":
+		Global.doYourThing = false
+		Global.something = false
+		$Tran/ColorRect.hide()
+
+
+func _on_AnimationPlayer2_animation_finished(anim_name):
+	if anim_name == "death":
+		$DeathTran.hide()
+
+
 
 
 

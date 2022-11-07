@@ -24,6 +24,7 @@ scale = Vector2( 0.816964, 0.816964 )
 normal = ExtResource( 2 )
 shape = SubResource( 4 )
 action = "Move_Up"
+visibility_mode = 1
 
 [node name="Left" type="TouchScreenButton" parent="."]
 position = Vector2( -35, 451 )
@@ -31,6 +32,7 @@ scale = Vector2( 0.817, 0.817 )
 normal = ExtResource( 1 )
 shape = SubResource( 5 )
 action = "Move_Left"
+visibility_mode = 1
 
 [node name="Right" type="TouchScreenButton" parent="."]
 position = Vector2( 312, 457 )
@@ -38,8 +40,10 @@ scale = Vector2( 0.817, 0.817 )
 normal = ExtResource( 3 )
 shape = SubResource( 3 )
 action = "Move_Right"
+visibility_mode = 1
 
 [node name="Shoot" type="TouchScreenButton" parent="."]
 position = Vector2( 8, 3 )
 shape = SubResource( 6 )
 action = "Shoot"
+visibility_mode = 1

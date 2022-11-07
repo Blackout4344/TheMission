@@ -6,8 +6,13 @@ var player = null
 var speed = 500
 
 func _ready():
-	lookVec = player.global_position - global_position
+	lookVec = player.position - position
 
+func _process(delta):
+	if Global.health == 30 or Global.health == 16:
+		position = Vector2(0,0)
+	if Global.health != 30 or Global.health != 16:
+		pass
 func _physics_process(delta):
 	move = Vector2.ZERO
 	
@@ -20,6 +25,7 @@ func _physics_process(delta):
 func _on_Bullet_body_entered(body):
 	if body.name == "Player":
 		get_tree().reload_current_scene()
+		Global.Boss = false
 		Global.health = 36
 		Global.boss2Health = 30
 		Global.boss3Health = 38

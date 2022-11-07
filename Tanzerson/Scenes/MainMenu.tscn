@@ -1,7 +1,46 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Sprites/text-1665513269604.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Steel Frames 2.4.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Steel Frames 2.2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Block1.6.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Spike.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprites/Block1.5.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Steel Frames 2.3.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/PlayerMenu.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Flying Enemy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=11]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "grey"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 0 ), Color( 0.145098, 0.141176, 0.141176, 1 ) ]
+}
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -18,4 +57,142 @@ flat = true
 icon_align = 1
 expand_icon = true
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.145098, 0.141176, 0.141176, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+anims/RESET = SubResource( 1 )
+anims/grey = SubResource( 2 )
+
+[node name="Block15" type="Sprite" parent="."]
+position = Vector2( 288, 554 )
+texture = ExtResource( 7 )
+
+[node name="Block16" type="Sprite" parent="."]
+position = Vector2( 390, 554 )
+texture = ExtResource( 5 )
+
+[node name="Block19" type="Sprite" parent="."]
+position = Vector2( 700, 554.5 )
+texture = ExtResource( 7 )
+
+[node name="Block20" type="Sprite" parent="."]
+position = Vector2( 803, 555 )
+texture = ExtResource( 5 )
+
+[node name="Block21" type="Sprite" parent="."]
+position = Vector2( 907, 555 )
+texture = ExtResource( 7 )
+
+[node name="Block22" type="Sprite" parent="."]
+position = Vector2( 1113, 554 )
+texture = ExtResource( 7 )
+
+[node name="Block24" type="Sprite" parent="."]
+position = Vector2( 186, 553 )
+texture = ExtResource( 5 )
+
+[node name="Block25" type="Sprite" parent="."]
+position = Vector2( 85, 552 )
+texture = ExtResource( 5 )
+
+[node name="Block18" type="Sprite" parent="."]
+position = Vector2( 596, 554.5 )
+texture = ExtResource( 5 )
+
+[node name="Block17" type="Sprite" parent="."]
+position = Vector2( 494, 554.5 )
+texture = ExtResource( 7 )
+
+[node name="Spike" parent="." instance=ExtResource( 6 )]
+position = Vector2( 661, 512 )
+z_index = -1
+
+[node name="SteelFrames23" type="Sprite" parent="."]
+position = Vector2( 82, 466 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames24" type="Sprite" parent="."]
+position = Vector2( 80, 552 )
+texture = ExtResource( 3 )
+
+[node name="SteelFrames22" type="Sprite" parent="."]
+position = Vector2( 82, 376 )
+texture = ExtResource( 4 )
+
+[node name="SteelFrames25" type="Sprite" parent="."]
+position = Vector2( 82, 287.5 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames26" type="Sprite" parent="."]
+position = Vector2( 82, 197.5 )
+texture = ExtResource( 4 )
+
+[node name="SteelFrames27" type="Sprite" parent="."]
+position = Vector2( 82, 105.5 )
+texture = ExtResource( 8 )
+
+[node name="SteelFrames28" type="Sprite" parent="."]
+position = Vector2( 82, 15.5 )
+texture = ExtResource( 4 )
+
+[node name="SteelFrames29" type="Sprite" parent="."]
+position = Vector2( 1136, 466 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames30" type="Sprite" parent="."]
+position = Vector2( 1136, 376 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="SteelFrames31" type="Sprite" parent="."]
+position = Vector2( 1136, 287.5 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames32" type="Sprite" parent="."]
+position = Vector2( 1136, 197.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="SteelFrames33" type="Sprite" parent="."]
+position = Vector2( 1136, 105.5 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="SteelFrames34" type="Sprite" parent="."]
+position = Vector2( 1136, 15.5 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="SteelFrames35" type="Sprite" parent="."]
+position = Vector2( 1135, 553 )
+texture = ExtResource( 8 )
+
+[node name="Enemy" parent="." instance=ExtResource( 11 )]
+position = Vector2( 151, 435 )
+speed = 0.0
+gravity = 0.0
+
+[node name="Block23" type="Sprite" parent="."]
+position = Vector2( 1009, 555 )
+texture = ExtResource( 5 )
+
+[node name="Block26" type="Sprite" parent="."]
+position = Vector2( 1009, 555 )
+texture = ExtResource( 5 )
+
+[node name="PlayerMenu" parent="." instance=ExtResource( 9 )]
+position = Vector2( 426, 448 )
+
+[node name="Flying Enemy" parent="." instance=ExtResource( 10 )]
+position = Vector2( 340, 209 )
+speed = 0.0
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="animation_finished" from="CanvasLayer/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

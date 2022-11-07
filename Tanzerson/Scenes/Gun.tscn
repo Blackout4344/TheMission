@@ -4,18 +4,17 @@
 [ext_resource path="res://Scripts/Gun.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 25.125, 16 )
+extents = Vector2( 31.5, 27 )
 
 [node name="Gun" type="Area2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -10, -4 )
-scale = Vector2( 0.417806, 0.417806 )
+position = Vector2( -11, -3.8147e-06 )
+scale = Vector2( 0.566046, 0.566046 )
 texture = ExtResource( 1 )
 flip_h = true
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 1 )
 shape = SubResource( 1 )

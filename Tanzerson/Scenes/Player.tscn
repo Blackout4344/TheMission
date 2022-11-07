@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Sprites/Walk5.svg" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
@@ -38,21 +38,21 @@
 [ext_resource path="res://Sprites/climbing frames for mk/Captur3-removebg-preview.png" type="Texture" id=36]
 [ext_resource path="res://Sprites/climbing frames for mk/Captur4-removebg-preview.png" type="Texture" id=37]
 [ext_resource path="res://Sprites/climbing frames for mk/Captur7-removebg-preview.png" type="Texture" id=38]
-[ext_resource path="res://Idle frames for mo khan/idle1-removebg-preview.png" type="Texture" id=39]
-[ext_resource path="res://Idle frames for mo khan/idle2-removebg-preview.png" type="Texture" id=40]
-[ext_resource path="res://Idle frames for mo khan/idle3-removebg-preview.png" type="Texture" id=41]
-[ext_resource path="res://Idle frames for mo khan/idle6-removebg-preview.png" type="Texture" id=42]
-[ext_resource path="res://Idle frames for mo khan/idle4-removebg-preview.png" type="Texture" id=43]
-[ext_resource path="res://Idle frames for mo khan/idle5-removebg-preview.png" type="Texture" id=44]
-[ext_resource path="res://Idle frames for mo khan/idle7-removebg-preview.png" type="Texture" id=45]
-[ext_resource path="res://Idle frames for mo khan/idle8-removebg-preview.png" type="Texture" id=46]
-[ext_resource path="res://Idle frames for mo khan/idle9-removebg-preview.png" type="Texture" id=47]
-[ext_resource path="res://Idle frames for mo khan/idle10-removebg-preview.png" type="Texture" id=48]
-[ext_resource path="res://Idle frames for mo khan/idle11-removebg-preview.png" type="Texture" id=49]
-[ext_resource path="res://Idle frames for mo khan/idle12-removebg-preview.png" type="Texture" id=50]
-[ext_resource path="res://Idle frames for mo khan/idle13-removebg-preview.png" type="Texture" id=51]
-[ext_resource path="res://Idle frames for mo khan/idle14-removebg-preview.png" type="Texture" id=52]
-[ext_resource path="res://Idle frames for mo khan/idle15-removebg-preview.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle1-removebg-preview.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle2-removebg-preview.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle3-removebg-preview.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle6-removebg-preview.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle4-removebg-preview.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle5-removebg-preview.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle7-removebg-preview.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle8-removebg-preview.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle9-removebg-preview.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle10-removebg-preview.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle11-removebg-preview.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle12-removebg-preview.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle13-removebg-preview.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle14-removebg-preview.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Idle frames for mo khan/idle15-removebg-preview.png" type="Texture" id=53]
 [ext_resource path="res://Sprites/idle3-removebg-preview.png" type="Texture" id=54]
 [ext_resource path="res://Sprites/idle4-removebg-preview.png" type="Texture" id=55]
 [ext_resource path="res://Sprites/idle5-removebg-preview.png" type="Texture" id=56]
@@ -66,6 +66,7 @@
 [ext_resource path="res://Scripts/ScreenShakey.gd" type="Script" id=64]
 [ext_resource path="res://Sounds/mixkit-air-in-a-hit-2161.wav" type="AudioStream" id=65]
 [ext_resource path="res://Sounds/long-saw-43911.mp3" type="AudioStream" id=66]
+[ext_resource path="res://Scripts/Tran.gd" type="Script" id=67]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25, 60.5 )
@@ -75,7 +76,7 @@ animations = [ {
 "frames": [ ExtResource( 35 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 38 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 32 ) ],
 "loop": true,
 "name": "Climbing",
-"speed": 20.0
+"speed": 60.0
 }, {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 42 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 63 ), ExtResource( 51 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 52 ), ExtResource( 53 ) ],
 "loop": true,
@@ -98,6 +99,66 @@ animations = [ {
 "speed": 20.0
 } ]
 
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "normal"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 1 ), Color( 0.145098, 0.141176, 0.141176, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.145098, 0.141176, 0.141176, 1 ), Color( 0.145098, 0.141176, 0.141176, 0 ) ]
+}
+
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 507, 247 )
 script = ExtResource( 2 )
@@ -113,7 +174,7 @@ shape = SubResource( 1 )
 current = true
 zoom = Vector2( 2, 2 )
 limit_left = -2200
-limit_top = -100000
+limit_top = -20640
 limit_right = 5900
 limit_bottom = -529
 editor_draw_limits = true
@@ -141,19 +202,14 @@ scale_amount = 9.69
 color = Color( 0.807843, 0.352941, 0.105882, 1 )
 
 [node name="DeathTimer" type="Timer" parent="."]
-one_shot = true
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -3, 0 )
 scale = Vector2( 0.424121, 0.427106 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 23
 
 [node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[node name="Timer2" type="Timer" parent="."]
 autostart = true
 
 [node name="KnifeSound" type="AudioStreamPlayer" parent="."]
@@ -162,6 +218,31 @@ stream = ExtResource( 65 )
 [node name="Death" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 66 )
 
+[node name="Tran" type="CanvasLayer" parent="."]
+script = ExtResource( 67 )
+
+[node name="ColorRect" type="ColorRect" parent="Tran"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.145098, 0.141176, 0.141176, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tran"]
+anims/RESET = SubResource( 3 )
+anims/normal = SubResource( 4 )
+
+[node name="DeathTran" type="CanvasLayer" parent="."]
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="DeathTran"]
+anims/RESET = SubResource( 5 )
+anims/death = SubResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="DeathTran"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.145098, 0.141176, 0.141176, 1 )
+
 [connection signal="timeout" from="Camera2D/Timer" to="Camera2D" method="_on_Timer_timeout"]
 [connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="animation_finished" from="Tran/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="DeathTran/AnimationPlayer2" to="." method="_on_AnimationPlayer2_animation_finished"]

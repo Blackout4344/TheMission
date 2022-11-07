@@ -1,15 +1,16 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Sprites/unnamed-removebg-preview.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Gun.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/HealthBar.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/Boss.gd" type="Script" id=8]
 [ext_resource path="res://Sounds/mixkit-game-gun-shot-1662.mp3" type="AudioStream" id=9]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 69.5, 189.5 )
+extents = Vector2( 81.5, 179.75 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 673, 485.625 )
+extents = Vector2( 1092.5, 1114.81 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 206.5, 120.5 )
@@ -19,13 +20,13 @@ position = Vector2( -59, -19 )
 script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 181.5, 47.5 )
+position = Vector2( 175, 62 )
 shape = SubResource( 5 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -370, -248 )
+position = Vector2( -789.5, -877.188 )
 shape = SubResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
@@ -52,8 +53,33 @@ position = Vector2( -17, 14 )
 
 [node name="ShootTimer" type="Timer" parent="."]
 
+[node name="Back" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="HealthBar" parent="." instance=ExtResource( 3 )]
+margin_left = 74.0
+margin_top = -288.0
+margin_right = 114.0
+margin_bottom = -248.0
+
+[node name="DeathParticles" type="CPUParticles2D" parent="."]
+position = Vector2( 175, 14 )
+emitting = false
+amount = 20
+lifetime = 0.3
+one_shot = true
+explosiveness = 1.0
+direction = Vector2( 0, 2 )
+spread = 83.12
+initial_velocity = 543.04
+initial_velocity_random = 1.0
+scale_amount = 9.69
+color = Color( 0.807843, 0.352941, 0.105882, 1 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="KillZone" to="." method="_on_KillZone_body_entered"]
 [connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]
+[connection signal="timeout" from="Back" to="." method="_on_Back_timeout"]
