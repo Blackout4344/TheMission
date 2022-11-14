@@ -18,9 +18,11 @@ func enter() -> void:
 	
 
 func _process(_delta):
+	if Global.selectMade:
+		self.position = Global.spawn_point
+		Global.selectMade = false
 	if Global.groundShake:
 		Global.camera.shake(1,5)	
-	Global.playerPosition = self.position
 	if Global.doYourThing:
 		$Tran/AnimationPlayer.play("normal")
 	
@@ -37,12 +39,15 @@ func _physics_process(delta):
 		$Sprite.flip_h = true
 		Vel.x -= speed
 	if (Vel.x != 0):
-		$Sprite.play("Walking")		
+		$Sprite.position = Vector2(-4,-24)
+		$Sprite.play("walking")		
 	else:
 		$Sprite.stop()
 	if is_on_wall():
+		$Sprite.position = Vector2(3,0)
 		$Sprite.play("Climbing")		
 	if not $Sprite.is_playing():
+		$Sprite.position = Vector2(3,0)
 		$Sprite.play("Idle")			
 	if Input.is_action_just_pressed("Move_Up") and (is_on_floor() or is_on_wall()): 
 		Vel.y = 0
@@ -51,7 +56,7 @@ func _physics_process(delta):
 		Vel.y += gravity * delta			
 	
 	if Input.is_action_just_pressed("Shoot"):
-		if readyShoot == true:
+		if readyShoot == true and Global.selectMade == false:
 			$KnifeSound.play()
 			shoot()	
 	Vel = move_and_slide(Vel,Vector2.UP) 
@@ -72,7 +77,7 @@ func _ready() -> void:
 			$DeathSound.play()
 			Global.deathSoundPlayed = true	
 	$DeathTran/ColorRect.show()
-	$DeathTran/AnimationPlayer2.play("death")		
+	$DeathTran/AnimationPlayer2.play("death")
 	self.position = Global.spawn_point
 	Global.deathSoundPlayed = false
 

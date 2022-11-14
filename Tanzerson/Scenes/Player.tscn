@@ -1,15 +1,15 @@
-[gd_scene load_steps=74 format=2]
+[gd_scene load_steps=87 format=2]
 
-[ext_resource path="res://Sprites/Walk5.svg" type="Texture" id=1]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0003.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://Sounds/mixkit-funny-game-over-2878.wav" type="AudioStream" id=3]
-[ext_resource path="res://Sprites/Walk2.svg" type="Texture" id=4]
-[ext_resource path="res://Sprites/Walk3.svg" type="Texture" id=5]
-[ext_resource path="res://Sprites/Walk1.svg" type="Texture" id=6]
-[ext_resource path="res://Sprites/Walk4.svg" type="Texture" id=7]
-[ext_resource path="res://Sprites/Walk6.svg" type="Texture" id=8]
-[ext_resource path="res://Sprites/Walk7.svg" type="Texture" id=9]
-[ext_resource path="res://Sprites/Walk8.svg" type="Texture" id=10]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0007.png" type="Texture" id=4]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0008.png" type="Texture" id=5]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0010.png" type="Texture" id=6]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0012.png" type="Texture" id=7]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0014.png" type="Texture" id=8]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0015.png" type="Texture" id=9]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0016.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Walk11.svg" type="Texture" id=11]
 [ext_resource path="res://Sprites/Walk12.svg" type="Texture" id=12]
 [ext_resource path="res://Sprites/Climb.svg" type="Texture" id=13]
@@ -67,6 +67,19 @@
 [ext_resource path="res://Sounds/mixkit-air-in-a-hit-2161.wav" type="AudioStream" id=65]
 [ext_resource path="res://Sounds/long-saw-43911.mp3" type="AudioStream" id=66]
 [ext_resource path="res://Scripts/Tran.gd" type="Script" id=67]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0017.png" type="Texture" id=68]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0001.png" type="Texture" id=69]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0002.png" type="Texture" id=70]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0004.png" type="Texture" id=71]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0013.png" type="Texture" id=72]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0019.png" type="Texture" id=73]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0020.png" type="Texture" id=74]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0005.png" type="Texture" id=75]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0006.png" type="Texture" id=76]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0011.png" type="Texture" id=77]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0009.png" type="Texture" id=78]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0018.png" type="Texture" id=79]
+[ext_resource path="res://mkgamerunninganimationsEPICEDITION/mkgamerunninganimationsEPICEDITION0021.png" type="Texture" id=80]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 25, 60.5 )
@@ -93,10 +106,10 @@ animations = [ {
 "name": "climbing",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 69 ), ExtResource( 70 ), ExtResource( 1 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 78 ), ExtResource( 6 ), ExtResource( 77 ), ExtResource( 7 ), ExtResource( 72 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 68 ), ExtResource( 79 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 80 ) ],
 "loop": true,
 "name": "walking",
-"speed": 20.0
+"speed": 60.0
 } ]
 
 [sub_resource type="Animation" id=3]
@@ -204,7 +217,7 @@ color = Color( 0.807843, 0.352941, 0.105882, 1 )
 [node name="DeathTimer" type="Timer" parent="."]
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( -3, 0 )
+position = Vector2( 3, 0 )
 scale = Vector2( 0.424121, 0.427106 )
 frames = SubResource( 2 )
 animation = "Idle"

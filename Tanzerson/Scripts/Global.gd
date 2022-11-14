@@ -1,5 +1,15 @@
 extends Node
 
+
+var deaths = 0
+var bobby = false
+var hardcore = false
+var timerStartRaw = 0
+var time = 0
+var timer_on = false
+var startTimer = false
+var selectMade = false
+var LvSelect = false
 var win = false
 var Boss = false
 var smtn = false

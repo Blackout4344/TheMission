@@ -31,6 +31,7 @@ func _process(delta):
 func _on_PlayerDetector_body_entered(body):
 	if body.name == "Player":
 		get_tree().reload_current_scene()
+		Global.deaths += 1
 		Global.Boss = false
 		Global.health = 36
 		Global.boss2Health = 30
