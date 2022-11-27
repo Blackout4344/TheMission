@@ -33,6 +33,7 @@ script = ExtResource( 6 )
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 0.580392, 0, 0, 1 )
 position = Vector2( -184, -203 )
 scale = Vector2( 2.15867, 2.15867 )
 frames = SubResource( 1 )
