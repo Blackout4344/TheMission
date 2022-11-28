@@ -1325,9 +1325,10 @@ position = Vector2( 6634.86, -16932 )
 z_index = -1
 
 [node name="AnimatedSprite" parent="." instance=ExtResource( 32 )]
+modulate = Color( 0.741176, 0.121569, 0.121569, 1 )
 position = Vector2( 4162, -10589 )
 scale = Vector2( 0.325907, 0.325907 )
-frame = 34
+frame = 7
 playing = true
 
 [node name="Particles" parent="." instance=ExtResource( 36 )]
