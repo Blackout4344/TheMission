@@ -1328,7 +1328,7 @@ z_index = -1
 modulate = Color( 0.741176, 0.121569, 0.121569, 1 )
 position = Vector2( 4162, -10589 )
 scale = Vector2( 0.325907, 0.325907 )
-frame = 19
+frame = 3
 playing = true
 
 [node name="Particles" parent="." instance=ExtResource( 36 )]
